@@ -13,7 +13,7 @@ st.sidebar.title("Selecciona una capa")
 capa = st.sidebar.selectbox("Elige un dataset para mostrar", ['Capacidades', 'Gobernanza', 'Integridad Política'])
 
 # Filtrar los datos según la capa seleccionada
-df_filtrado = df_final[df_final['Capa'] == capa]
+df_filtrado = df_final[df_final['Capa'] == Capa]
 
 # Barra lateral para deslizador de filtrado de puntuaciones
 min_score, max_score = st.sidebar.slider("Selecciona el rango de puntuación", float(df_filtrado['score'].min()), float(df_filtrado['score'].max()), (float(df_filtrado['score'].min()), float(df_filtrado['score'].max())))
