@@ -3,7 +3,7 @@ import plotly.express as px
 import streamlit as st
 
 # Cargar el CSV preprocesado
-df_final = pd.read_csv("final_merged_data.csv")
+df_final = pd.read_xls("final_merged_data.xls")
 
 # Título de la aplicación
 st.title("Barómetro de Data Abierta")
