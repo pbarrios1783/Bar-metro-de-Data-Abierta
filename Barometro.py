@@ -10,7 +10,7 @@ st.title("Barómetro de Data Abierta")
 
 # Barra lateral para seleccionar la capa
 st.sidebar.title("Selecciona una capa")
-capa = st.sidebar.selectbox("Elige un dataset para mostrar", ['Capacidades', 'Gobernanza', 'Integridad Política'])
+Capa = st.sidebar.selectbox("Elige un dataset para mostrar", ['Capacidades', 'Gobernanza', 'Integridad Política'])
 
 # Filtrar los datos según la capa seleccionada
 df_filtrado = df_final[df_final['Capa'] == Capa]
